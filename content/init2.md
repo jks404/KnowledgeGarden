@@ -1,6 +1,5 @@
 ---
-title: hi 123
-draft: true
+title: hi
 ---
 
-fr fr
+just testing
