@@ -37,7 +37,13 @@ export const defaultContentPageLayout: PageLayout = {
         { Component: Component.ReaderMode() },
       ],
     }),
-    Component.Explorer(),
+Component.Explorer({
+  useSavedState: false, 
+  filterFn: (node) => {
+    // This allows everything except the 'tags' folder
+    return node.displayName !== "tags"
+  },
+}),
   ],
   right: [
     Component.Graph(),
@@ -61,7 +67,13 @@ export const defaultListPageLayout: PageLayout = {
         { Component: Component.Darkmode() },
       ],
     }),
-    Component.Explorer(),
+Component.Explorer({
+  useSavedState: false, 
+  filterFn: (node) => {
+    // This allows everything except the 'tags' folder
+    return node.displayName !== "tags"
+  },
+}),
   ],
   right: [],
 }
