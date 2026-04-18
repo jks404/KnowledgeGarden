@@ -1,5 +1,6 @@
 ---
-title: Welcome to JK's Digital Garden
+title: Welcome to Quartz
 ---
 
-Welcome to JK's Digital Garden
+This is a blank Quartz installation.
+See the [documentation](https://quartz.jzhao.xyz) for how to get started.
